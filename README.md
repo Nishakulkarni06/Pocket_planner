@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# Pocket Planner
 
-TODO: Document your project here
+A personal finance dashboard to track income, expenses, and spending patterns.

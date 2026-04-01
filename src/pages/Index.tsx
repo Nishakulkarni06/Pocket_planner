@@ -13,13 +13,21 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <DashboardHeader />
           <div className="space-y-6">
-            <SummaryCards />
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <BalanceTrendChart />
-              <SpendingBreakdownChart />
+            <div id="dashboard">
+              <SummaryCards />
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <BalanceTrendChart />
+                <div id="top-spending">
+                  <SpendingBreakdownChart />
+                </div>
+              </div>
             </div>
-            <TransactionsSection />
-            <InsightsSection />
+            <div id="transactions">
+              <TransactionsSection />
+            </div>
+            <div id="insights">
+              <InsightsSection />
+            </div>
           </div>
         </div>
       </div>
